@@ -17,22 +17,38 @@ function App() {
             <React.StrictMode>
                 <BrowserRouter>
                     <Routes>
-                        <Route path="/" exact Component={LandingPage} />
-                        <Route path="/home" exact Component={Homescreen} />
                         <Route
-                            path="/book/:roomid/:fromdate/:todate"
+                            path="/hotelinhand/"
+                            exact
+                            Component={LandingPage}
+                        />
+                        <Route
+                            path="/hotelinhand/home"
+                            exact
+                            Component={Homescreen}
+                        />
+                        <Route
+                            path="/hotelinhand/book/:roomid/:fromdate/:todate"
                             exact
                             Component={Bookingscreen}
                         />
-                        <Route path="/login" exact Component={Loginscreen} />
                         <Route
-                            path="/register"
+                            path="/hotelinhand/login"
+                            exact
+                            Component={Loginscreen}
+                        />
+                        <Route
+                            path="/hotelinhand/register"
                             exact
                             Component={Registerscreen}
                         />
-                        <Route path="/admin" exact Component={Adminscreen} />
                         <Route
-                            path="/profile"
+                            path="/hotelinhand/admin"
+                            exact
+                            Component={Adminscreen}
+                        />
+                        <Route
+                            path="/hotelinhand/profile"
                             exact
                             Component={Profilescreen}
                         />
