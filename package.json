@@ -5,8 +5,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy":"yarn build",
-    "deploy":"gh-pages -d dist",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -24,7 +24,8 @@
     "react-spinners": "^0.13.8",
     "react-stripe-checkout": "^2.6.3",
     "styled-components": "^6.0.4",
-    "sweetalert2": "^11.7.18"
+    "sweetalert2": "^11.7.18",
+    "web-vitals": "^3.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",

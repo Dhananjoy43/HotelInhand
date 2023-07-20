@@ -23,7 +23,7 @@ function Bookingscreen({ match }) {
     useEffect(() => {
         const user = JSON.parse(localStorage.getItem("currentUser"));
         if (!user) {
-            window.location.href = "/login";
+            window.location.href = "/hotelinhand/login";
         }
         return async () => {
             try {
@@ -65,7 +65,7 @@ function Bookingscreen({ match }) {
                 "Your room booked successfully",
                 "success"
             ).then((result) => {
-                window.location.href = "/profile";
+                window.location.href = "/hotelinhand/profile";
             });
         } catch (error) {
             setloading(false);

@@ -24,7 +24,7 @@ function Loginscreen() {
                 .data;
             setloading(false);
             localStorage.setItem("currentUser", JSON.stringify(result));
-            window.location.href = "/home";
+            window.location.href = "/hotelinhand/home";
         } catch (error) {
             console.log(error);
             setloading(false);

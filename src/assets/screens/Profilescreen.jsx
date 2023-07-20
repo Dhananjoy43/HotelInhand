@@ -12,7 +12,7 @@ function Profilescreen() {
 
     useEffect(() => {
         if (!user) {
-            window.location.href = "/login";
+            window.location.href = "/hotelinhand/login";
         }
     }, []);
 

@@ -5,7 +5,7 @@ function Navbar() {
     const user = JSON.parse(localStorage.getItem("currentUser"));
     function logout() {
         localStorage.removeItem("currentUser");
-        window.location.href = "/login";
+        window.location.href = "/hotelinhand/login";
     }
     return (
         <div>
@@ -13,7 +13,7 @@ function Navbar() {
                 <div className="container-fluid">
                     <a
                         className="navbar-brand"
-                        href="/home"
+                        href="/hotelinhand/home"
                         style={{ fontSize: "25px", padding: "15px" }}
                     >
                         HotelInHand
@@ -64,7 +64,7 @@ function Navbar() {
                                 <>
                                     <a
                                         className="nav-link"
-                                        href="/register"
+                                        href="/hotelinhand/register"
                                         style={{
                                             fontFamily: "Georgia",
                                             fontSize: "20px",

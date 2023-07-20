@@ -10,10 +10,10 @@ function Adminscreen() {
     useEffect(() => {
         const user = JSON.parse(localStorage.getItem("currentUser"));
         if (!user) {
-            window.location.href = "/login";
+            window.location.href = "/hotelinhand/login";
         }
         if (!user.isAdmin) {
-            window.location.href = "/home";
+            window.location.href = "/hotelinhand/home";
         }
     }, []);
 
